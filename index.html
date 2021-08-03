@@ -8,14 +8,14 @@
 </head>
 <body>
     <div id="app">
-        <span v-text="message"></span>
+        <span p-text="message"></span>
         <br>
-        <input type="text" v-model="message">
+        <input type="text" p-model="message">
     </div>
 
-    <script src="https://unpkg.com/vue@next"></script>
+    <script src="./pug.js"></script>
     <script>
-        const { createApp } = Vue;
+        const { createApp } = Pug;
 
         const app = createApp({
             data() {
@@ -25,7 +25,7 @@
             }
         });
 
-        app.mount("#app");
+        app.mount();
     </script>
 </body>
 </html>
