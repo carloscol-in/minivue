@@ -11,6 +11,8 @@
         <span p-text="message"></span>
         <br>
         <input type="text" p-model="message">
+        <input type="text" p-model="image">
+        <img p-bind="src:image">
     </div>
 
     <script src="./pew.js"></script>
@@ -21,6 +23,7 @@
             data() {
                 return {
                     message: "Hola, Vue!",
+                    image: "https://www.manejandodatos.es/wp-content/uploads/2018/02/vueJS.png",
                 }
             }
         });
